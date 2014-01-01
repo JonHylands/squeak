@@ -1,0 +1,31 @@
+ProductInformation
+	VendorName	MicroStrain
+	ProductName	3DM-G
+	Interface		Serial
+	Protocol		RS232
+	ByteOrder	MsbFirst
+	BaudRate		38400
+	Parity		none
+	DataBits		8
+	StopBits		1
+	ComPort		1
+
+Command			SendGyroStabilizedQuaternion
+	command		Integer8		0x05
+
+Response			SendGyroStabilizedQuaternion
+	command		Integer8
+	quaternion0	Integer16
+	quaternion1	Integer16
+	quaternion2	Integer16
+	quaternion3	Integer16
+	timerTicks	Integer16
+	checksum		Integer16
+
+Command			SendFirmwareVersionNumber
+	command		Integer8		0xF0
+
+Response			SendFirmwareVersionNumber
+	command		Integer8		
+	version		Integer16
+	checksum		Integer16

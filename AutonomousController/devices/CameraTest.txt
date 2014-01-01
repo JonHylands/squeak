@@ -1,0 +1,1 @@
+#####################################	CameraTest##	This is the definition file for CameraTest,#	test module for the AVR Camera.#VendorName	HUVProductName	OrionDevice		devices\AvrCameraDevice.txt#####################################	Sensors#Sensor	class	AvAvrCameraSensor	name	avrcam	device	AVRcam

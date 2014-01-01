@@ -1,0 +1,38 @@
+ProductInformation
+	VendorName	Honeywell
+	ProductName	HMR3300
+	Interface		Indirect
+	Protocol		RS232
+	BaudRate		19200
+	Parity		none
+	DataBits		8
+	StopBits		1
+	ComPort		1
+
+Command			TogglePolledMode
+	prefix		Integer8		'*'
+	command		Integer8		'S'
+	cr		Integer8		13
+	lf		Integer8		10
+
+Response			TogglePolledMode
+
+Command			ToggleCalibrationMode
+	prefix		Integer8		'*'
+	command		Integer8		'C'
+	cr		Integer8		13
+	lf		Integer8		10
+
+Response			ToggleCalibrationMode
+
+Command			GetHeading
+	prefix		Integer8		'*'
+	command		Integer8		'Q'
+	cr		Integer8		13
+	lf		Integer8		10
+
+Response			GetHeading
+	heading		DelimitedAsciiNumber	','
+	pitch		DelimitedAsciiNumber	','
+	roll		DelimitedAsciiNumber	','
+

@@ -1,0 +1,1 @@
+#####################################	Drone##	This is the definition file for Drone,#	a simple autonomous ground vehicle.#VendorName	HUVProductName	DroneDevice		devices\PIC-Gyro-TestDevice.txt#####################################	Sensors#Sensor	class	AvGyroSensor	name	gyro	device	Gyro Test

@@ -1,0 +1,3 @@
+RoboMagellan 1	roboMagellan1.bmp	roboMagellan1-2x.bmp
+RoboMagellan 2	roboMagellan2.bmp	roboMagellan2-2x.bmp
+RoboMagellan 3	roboMagellan3.bmp	roboMagellan3-2x.bmp

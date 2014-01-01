@@ -1,0 +1,1 @@
+ProductInformation	VendorName	HUV	ProductName	Gyro Test	Interface		Serial	Protocol		Rs232	BaudRate		19200	Parity			none	DataBits		8	StopBits		1	ComPort		5	ReadWrite		read	DataFormat	packetPushCommand			getRate	command			Integer8	'A'	responderName	String		'gyro'Response				getRate	packetCommand	Integer8	packetLength		Integer8	value				Integer16

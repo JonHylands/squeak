@@ -1,0 +1,22 @@
+###################################
+#
+#	Orion
+#
+#	This is the definition file for Orion,
+#	an autonomous ground vehicle.
+#
+
+VendorName	Dave Hylands Engineering
+ProductName	Orion
+
+Device		devices\GarminGekoGPSDevice.txt
+
+###################################
+#
+#	Sensors
+#
+
+Sensor
+	class	AvGpsSensor
+	name	gps
+	device	Geko 201

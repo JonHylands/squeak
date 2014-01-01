@@ -1,0 +1,19 @@
+ProductInformation
+	VendorName	Garmin
+	ProductName	Geko 201
+	Interface		Serial
+	Protocol		Rs232
+	BaudRate		4800
+	Parity		none
+	DataBits		8
+	StopBits		1
+	ComPort		2
+	ReadWrite	read
+	DataFormat	line
+
+PushCommand		getSentence
+	command		Integer8		'$'
+	responderName	String		'gps'
+
+Response			getSentence
+	sentence		StringLine

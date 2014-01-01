@@ -1,0 +1,173 @@
+###################################
+#
+#	Orion
+#
+#	This is the definition file for Orion,
+#	an autonomous ground vehicle.
+#
+
+VendorName	Dave Hylands Engineering
+ProductName	Orion
+
+Device		devices\GarminGekoGPSDevice.txt
+Device		devices\OrionDevice.txt
+
+###################################
+#
+#	Sensors
+#
+
+Sensor
+	class	AvGpsSensor
+	name	gps
+	device	Geko 201
+
+Sensor
+	class	AvInertialSensor
+	name	imu
+	device	Orion
+
+Sensor
+	class	AvCompassSensor
+	name	compass
+	device	Orion
+
+Sensor
+	class	AvRolloverSensor
+	name	rollover
+	device	Orion
+
+Sensor
+	class	AvRotationEncoderSensor
+	name	frontLeftWheelEncoder
+	device	Orion
+
+Sensor
+	class	AvRotationEncoderSensor
+	name	frontRightWheelEncoder
+	device	Orion
+
+Sensor
+	class	AvRotationEncoderSensor
+	name	rearLeftWheelEncoder
+	device	Orion
+
+Sensor
+	class	AvRotationEncoderSensor
+	name	rearRightWheelEncoder
+	device	Orion
+
+Sensor
+	class	AvAngleEncoderSensor
+	name	frontSteeringEncoder
+	device	Orion
+
+Sensor
+	class	AvAngleEncoderSensor
+	name	rearSteeringEncoder
+	device	Orion
+
+Sensor
+	class	AvAngleEncoderSensor
+	name	turrentPanEncoder
+	device	Orion
+
+Sensor
+	class	AvAngleEncoderSensor
+	name	turrentTiltEncoder
+	device	Orion
+
+Sensor
+	class	AvAngleEncoderSensor
+	name	rolloverArmEncoder
+	device	Orion
+
+Sensor
+	class	AvContactSensor
+	name	frontContact
+	device	Orion
+
+Sensor
+	class	AvContactSensor
+	name	rearContact
+	device	Orion
+
+Sensor
+	class	AvRangeFinderSensor
+	name	frontIRRange
+	device	Orion
+
+Sensor
+	class	AvRangeFinderSensor
+	name	rearIRRange
+	device	Orion
+
+Sensor
+	class	AvRangeFinderSensor
+	name	leftIRRange
+	device	Orion
+
+Sensor
+	class	AvRangeFinderSensor
+	name	rightIRRange
+	device	Orion
+
+Sensor
+	class	AvRangeFinderSensor
+	name	turrentLeftIRRange
+	device	Orion
+
+Sensor
+	class	AvRangeFinderSensor
+	name	turrentRightIRRange
+	device	Orion
+
+Sensor
+	class	AvRangeFinderSensor
+	name	leftTurrentSonar
+	device	Orion
+
+Sensor
+	class	AvRangeFinderSensor
+	name	rightTurrentSonar
+	device	Orion
+
+###################################
+#
+#	Actuators
+#
+
+Actuator
+	class	AvMotorActuator
+	name	frontMotor
+	device	Orion
+
+Actuator
+	class	AvMotorActuator
+	name	rearMotor
+	device	Orion
+
+Actuator
+	class	AvServoActuator
+	name	frontSteering
+	device	Orion
+
+Actuator
+	class	AvServoActuator
+	name	rearSteering
+	device	Orion
+
+Actuator
+	class	AvServoActuator
+	name	panTurrent
+	device	Orion
+
+Actuator
+	class	AvServoActuator
+	name	tiltTurrent
+	device	Orion
+
+Actuator
+	class	AvServoActuator
+	name	rolloverArm
+	device	Orion

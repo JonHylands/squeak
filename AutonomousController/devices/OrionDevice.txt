@@ -1,0 +1,41 @@
+ProductInformation
+	VendorName	Dave Hylands Engineering
+	ProductName	Orion
+	Interface		Serial
+	Protocol		I2C
+	ComPort		2
+	ReadWrite	read write
+	DataFormat	packet
+
+PushCommand			getIMU
+	command			Integer8			1
+	responderName		String			'imu'
+
+Response				getIMU
+	pitchGyro			Integer16
+	rollGyro			Integer16
+	yawGyro			Integer16
+	accererationForwards	Integer16
+	accererationRight		Integer16
+	temperature		Integer8
+
+PushCommand		getCompass
+	command			Integer8			2
+	responderName	String			'compass'
+
+Response				getCompass
+	heading			Integer16
+
+PushCommand		getFrontLeftWheelEncoder
+	command			Integer8			3
+	responderName	String				'frontLeftWheelEncoder'
+
+Response				getFrontLeftWheelEncoder
+	revolutionsPerMinute		Integer16
+
+Command				setFrontMotorSpeed
+	responderName		String			'frontMotor'
+	command			Integer8			101
+	revolutionsPerMinute		Integer16
+
+Response				setFrontMotorSpeed
